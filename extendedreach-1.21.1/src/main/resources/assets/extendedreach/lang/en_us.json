@@ -1,13 +1,7 @@
 {
-  "itemGroup.extendedreach": "Example Mod Tab",
-  "block.extendedreach.example_block": "Example Block",
-  "item.extendedreach.example_item": "Example Item",
+  "itemGroup.extendedreach": "Extended Reach",
+  "item.extendedreach.reach_amulet": "Reach Amulet",
 
   "extendedreach.configuration.title": "Extended Reach Configs",
-  "extendedreach.configuration.section.extendedreach.common.toml": "Extended Reach Configs",
-  "extendedreach.configuration.section.extendedreach.common.toml.title": "Extended Reach Configs",
-  "extendedreach.configuration.items": "Item List",
-  "extendedreach.configuration.logDirtBlock": "Log Dirt Block",
-  "extendedreach.configuration.magicNumberIntroduction": "Magic Number Text",
-  "extendedreach.configuration.magicNumber": "Magic Number"
+  "extendedreach.configuration.section.extendedreach.common.toml": "Extended Reach Configs"
 }

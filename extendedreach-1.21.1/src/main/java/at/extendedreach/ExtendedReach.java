@@ -1,5 +1,6 @@
 package at.extendedreach;
 
+import at.extendedreach.registry.ModItems; // Import the new class
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
@@ -15,13 +16,12 @@ public class ExtendedReach {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public ExtendedReach(IEventBus modEventBus, ModContainer modContainer) {
-        // Register config FIRST - before accessing any config values
+        // Register config FIRST
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
-        // Register reach manager
-        NeoForge.EVENT_BUS.register(new ReachManager());
+        // Register Items
+        ModItems.register(modEventBus);
 
         LOGGER.info("Extended Reach mod initialized");
-        // Don't log config values here - they're not loaded yet
     }
 }
